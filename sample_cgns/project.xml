@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iRICProject version="4.2.0.6971" solverName="rriresultviewer" solverVersion="0.1" timeFormat="elapsed|SS sec" customTimeFormat="" offsetX="0" offsetY="0" separateResult="false">
+    <CgnsFileList current="Case1">
+        <CgnsFileEntry filename="Case1" comment=""/>
+    </CgnsFileList>
+    <MeasuredDatas/>
+    <CalculationResult currentStep="0"/>
+    <PostProcessors/>
+    <Backgrounds/>
+    <DefaultColorMapSettings/>
+    <PreProcessorWindow ref="subwindows/preprocessor.xml"/>
+    <SolverConsoleWindow minimized="false" maximized="false" left="30" top="30" width="700" height="500" backgroundColor="#c8c8c8"/>
+    <PostProcessorFactory/>
+</iRICProject>

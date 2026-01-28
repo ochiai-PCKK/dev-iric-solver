@@ -1,0 +1,5 @@
+# Build configuration (TOML)
+
+[build]
+# solver_dir_name = "rriresultviewer"
+solver_dir_name = "CgnTM"

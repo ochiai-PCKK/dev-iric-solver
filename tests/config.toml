@@ -1,0 +1,9 @@
+python_path = "C:/Users/yuuta.ochiai/iRIC_v4/Miniconda3/envs/iric/python.exe"
+# 実ファイルのパスを指定する
+cgns_path = "data/sample_cgns/Case1.cgn"
+args = []
+workdir = "."
+output_dir = "tests/output"
+check_cgns = true
+
+[env]

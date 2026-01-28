@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SolverDefinition
+  name="rriresultviewer"
+  caption="RRI Result Viewer"
+  version="0.1.1"
+  copyright="Pacific Consultants Co., Ltd. (PCKK)"
+  release="2026.01.26"
+  homepage="https://github.com/Pckk-solvers/iric-rri-result-viewer"
+  executable="main.py"
+  iterationtype="time"
+  gridtype="structured2d"
+>
+  <CalculationCondition>
+    <Tab name="main" caption="Settings">
+
+      <GroupBox caption="Input (ASC)">
+        <Item name="asc_folder" caption="ASC folder">
+          <Definition valueType="foldername" />
+        </Item>
+
+        <Item name="encoding" caption="Text encoding">
+          <Definition valueType="integer" default="0">
+            <Enumeration value="0" caption="Auto (try cp932 / utf-8)" />
+            <Enumeration value="1" caption="cp932 (Shift_JIS)" />
+            <Enumeration value="2" caption="utf-8" />
+          </Definition>
+        </Item>
+
+        <Item name="flip_y" caption="Flip Y direction (row order)">
+          <Definition valueType="integer" default="1">
+            <Enumeration value="0" caption="No" />
+            <Enumeration value="1" caption="Yes" />
+          </Definition>
+        </Item>
+      </GroupBox>
+
+      <GroupBox caption="Output">
+        <Item name="output_folder" caption="Output folder">
+          <Definition valueType="foldername" />
+        </Item>
+      </GroupBox>
+
+      <GroupBox caption="Time series">
+        <Item name="start_index" caption="Start index (e.g., 1)">
+          <Definition valueType="integer" default="1" min="1" max="999999" />
+        </Item>
+
+        <Item name="num_steps" caption="Number of timesteps (0=auto detect)">
+          <Definition valueType="integer" default="0" min="0" max="1000000" />
+        </Item>
+
+        <Item name="zero_pad" caption="Zero padding width (e.g., 6 for 000001)">
+          <Definition valueType="integer" default="6" min="1" max="12" />
+        </Item>
+
+        <Item name="dt_seconds" caption="Δt (seconds)">
+          <Definition valueType="real" default="1.0" min="0" />
+        </Item>
+
+        <Item name="t0_seconds" caption="Start time (seconds)">
+          <Definition valueType="real" default="0.0" />
+        </Item>
+      </GroupBox>
+
+      <GroupBox caption="Variables (import switch)">
+        <Item name="use_gampt_ff" caption="gampt_ff_XXXXXX.asc">
+          <Definition valueType="integer" default="1">
+            <Enumeration value="0" caption="Skip" />
+            <Enumeration value="1" caption="Import" />
+          </Definition>
+        </Item>
+
+        <Item name="use_hf" caption="hf_XXXXXX.asc">
+          <Definition valueType="integer" default="1">
+            <Enumeration value="0" caption="Skip" />
+            <Enumeration value="1" caption="Import" />
+          </Definition>
+        </Item>
+
+        <Item name="use_hg" caption="hg_XXXXXX.asc">
+          <Definition valueType="integer" default="1">
+            <Enumeration value="0" caption="Skip" />
+            <Enumeration value="1" caption="Import" />
+          </Definition>
+        </Item>
+
+        <Item name="use_hr" caption="hr_XXXXXX.asc">
+          <Definition valueType="integer" default="1">
+            <Enumeration value="0" caption="Skip" />
+            <Enumeration value="1" caption="Import" />
+          </Definition>
+        </Item>
+
+        <Item name="use_hs" caption="hs_XXXXXX.asc">
+          <Definition valueType="integer" default="1">
+            <Enumeration value="0" caption="Skip" />
+            <Enumeration value="1" caption="Import" />
+          </Definition>
+        </Item>
+
+        <Item name="use_qr" caption="qr_XXXXXX.asc">
+          <Definition valueType="integer" default="1">
+            <Enumeration value="0" caption="Skip" />
+            <Enumeration value="1" caption="Import" />
+          </Definition>
+        </Item>
+
+        <Item name="use_qrs" caption="qrs_XXXXXX.asc">
+          <Definition valueType="integer" default="1">
+            <Enumeration value="0" caption="Skip" />
+            <Enumeration value="1" caption="Import" />
+          </Definition>
+        </Item>
+
+      </GroupBox>
+
+    </Tab>
+  </CalculationCondition>
+
+</SolverDefinition>
