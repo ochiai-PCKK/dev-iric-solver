@@ -1,0 +1,2 @@
+[console_scripts]
+isol-dev = isol_dev.cli:main

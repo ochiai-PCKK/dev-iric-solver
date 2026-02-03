@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isol-dev"
+version = "0.1.0"
+description = "iRIC solver development helper CLI"
+requires-python = ">=3.12"
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+isol-dev = "isol_dev.cli:main"
+
+[tool.setuptools]
+packages = ["isol_dev"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+isol_dev = ["templates/*.toml", "templates/*.xml", "templates/*.py"]

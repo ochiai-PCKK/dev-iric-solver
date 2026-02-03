@@ -1,0 +1,26 @@
+# isol-dev configuration (TOML)
+
+[paths]
+# 変更しなくてOK: ソースと出力の標準パス
+src_dir = "src"
+dist_dir = "dist"
+
+[build]
+# 変更が必要: ソルバーディレクトリ名
+solver_dir_name = "CgnTM"
+
+[test]
+# 変更が必要: iRICのPython実行ファイル
+python_path = "C:/path/to/iric/python.exe"
+# 変更が必要: テストに使うCGNS
+cgns_path = "sample_cgns/Case1.cgn"
+
+# 変更しなくてOK: 追加引数
+args = []
+# 変更しなくてOK: 出力先 (日時サブディレクトリが作成される)
+output_dir = "isol_dev_output"
+# 変更しなくてOK: CGNSの開閉チェック
+check_cgns = true
+
+[test.env]
+# 任意: 環境変数の上書き
