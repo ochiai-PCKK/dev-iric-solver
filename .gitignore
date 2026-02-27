@@ -1,5 +1,13 @@
-*__pycache__
-*.pyc
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
 
-# testの出力ディレクトリ
-tests/output
+# Build
+dist/
+build/
+
+# OS
+Thumbs.db
+desktop.ini
